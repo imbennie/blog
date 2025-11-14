@@ -45,7 +45,7 @@ jobs:
           version: latest
           run_install: false
           
-      - name: Use Node.js 18.x
+      - name: Use Node.js
         uses: actions/setup-node@v6
         with:
           node-version: "latest"
@@ -57,6 +57,9 @@ jobs:
       - name: Build with Hexo
         run: pnpm exec hexo g
 
+      - name: Debug build output
+        run: ls -R ./dist
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:

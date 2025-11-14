@@ -58,7 +58,7 @@ jobs:
         run: pnpm exec hexo g
 
       - name: Debug build output
-        run: ls -R ./dist
+        run: ls -Rlht ./public
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4

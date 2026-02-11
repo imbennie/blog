@@ -12,6 +12,8 @@ categories:
 
 
 我使用的maven插件是[Spotify的docker-maven-plugin](https://github.com/spotify/docker-maven-plugin)
+注：该插件官方已不维护，仓库进入归档状态。
+
 即：
 
 {% codeblock lang:xml %}
